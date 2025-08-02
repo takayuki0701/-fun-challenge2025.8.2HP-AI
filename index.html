@@ -6,6 +6,13 @@
   <title>株式会社fun challenge</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Orange Form のスタイル＆スクリプト -->
+  <link href="https://form.os7.biz/current//css/design-pc1/common_v230810.css" rel="stylesheet" type="text/css" />
+  <link href="https://form.os7.biz/current//css/design-pc1/orange.css" rel="stylesheet" type="text/css" />
+  <script src="https://form.os7.biz/current//js/jquery.min.js"></script>
+  <script src="https://form.os7.biz/current//js/of_lib.js"></script>
+  <script src="https://form.os7.biz/current//js/js.cookie-2.2.0.min.js"></script>
 </head>
 <body>
 
@@ -81,6 +88,7 @@
         <ul class="company-list">
           <li><strong>会社名：</strong>株式会社fun challenge</li>
           <li><strong>所在地：</strong>大阪市阿倍野区阿倍野元町3-10-206</li>
+          <li><strong>連絡先：</strong>090-7491-6014</li>
           <li><strong>設立：</strong>2023年12月1日</li>
           <li><strong>資本金：</strong>500万円</li>
           <li><strong>従業員数：</strong>23名（アルバイト含む）</li>
@@ -88,12 +96,65 @@
         </ul>
       </div>
     </section>
+
+    <!-- お問い合わせフォーム -->
+    <section class="contact-form">
+      <div class="container">
+        <form action="https://form.os7.biz/form/submit/" method="post" id="OF_form1" class="h-adr">
+          <input type="hidden" name="form_id" value="243407" />
+          <input type="hidden" name="encoding_test" value="あいうえお眉幅ABC" />
+          <input type="hidden" name="base_url" id="base_url" value="https://form.os7.biz/" />
+          <input type="hidden" name="urlhash" id="urlhash" value="f/11115f6a/" />
+          <input type="hidden" name="oid" id="oid" value="1042579" />
+
+          <table id="formtable">
+            <tr id="caption"><th colspan="2">問い合わせ・お申し込み</th></tr>
+            <tr id="sec_seimei1:seimei2">
+              <th>姓名<span class="required">必須</span></th>
+              <td>
+                （姓）<input type="text" name="seimei1" style="width:60px" id="seimei1" required />
+                （名）<input type="text" name="seimei2" style="width:60px" id="seimei2" required />
+              </td>
+            </tr>
+            <tr id="sec__seimei1:_seimei2">
+              <th>フリガナ<span class="required">必須</span></th>
+              <td>
+                （セイ）<input type="text" name="_seimei1" style="width:60px" id="_seimei1" required />
+                （メイ）<input type="text" name="_seimei2" style="width:60px" id="_seimei2" required />
+              </td>
+            </tr>
+            <tr id="sec_mail">
+              <th>メールアドレス <span class="required">必須</span></th>
+              <td><input type="email" name="mail" id="mail" required /></td>
+            </tr>
+            <tr id="sec_co">
+              <th>会社名（団体名） <span class="required">必須</span></th>
+              <td><input type="text" name="co" id="co" required /></td>
+            </tr>
+            <tr id="sec_free1">
+              <th>フリー項目1 <span class="required">必須</span></th>
+              <td>
+                <input type="text" name="free1" value="eラーニング研修受講希望の有無（希望するor希望しない）" id="free1" required />
+              </td>
+            </tr>
+          </table>
+
+          <div class="OF_center">
+            <input class="OF_submit_btn1" type="button" value="　確　認　" onclick="OF_submit()" />
+          </div>
+          <div id="copyright">
+            Powered by 
+            <a href="https://form.orange-cloud7.net/" target="_blank">メールフォーム 『オレンジフォーム』</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer>
     <div class="container">
       <p>&copy; 2025 株式会社fun challenge</p>
-      <p><a href="contact.html">お問い合わせ・申し込みはこちら</a></p>
     </div>
   </footer>
 
